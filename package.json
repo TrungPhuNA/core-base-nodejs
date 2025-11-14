@@ -1,0 +1,48 @@
+{
+    "name": "be-api",
+    "version": "1.0.0",
+    "description": "Backend API with Node.js + Express + MySQL",
+    "main": "src/server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/server.js",
+        "dev": "nodemon src/server.js",
+        "migrate": "sequelize-cli db:migrate",
+        "migrate:undo": "sequelize-cli db:migrate:undo",
+        "migrate:undo:all": "sequelize-cli db:migrate:undo:all",
+        "seed": "sequelize-cli db:seed:all",
+        "seed:undo": "sequelize-cli db:seed:undo:all",
+        "migration:create": "sequelize-cli migration:generate",
+        "seeder:create": "sequelize-cli seed:generate"
+    },
+    "keywords": [
+        "nodejs",
+        "express",
+        "mysql",
+        "sequelize",
+        "jwt",
+        "api"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2",
+        "mysql2": "^3.6.5",
+        "sequelize": "^6.35.2",
+        "dotenv": "^16.3.1",
+        "bcrypt": "^5.1.1",
+        "jsonwebtoken": "^9.0.2",
+        "joi": "^17.11.0",
+        "cors": "^2.8.5",
+        "morgan": "^1.10.0",
+        "helmet": "^7.1.0",
+        "express-rate-limit": "^7.1.5",
+        "swagger-ui-express": "^5.0.0",
+        "swagger-jsdoc": "^6.2.8"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2",
+        "sequelize-cli": "^6.6.2"
+    }
+}
+
